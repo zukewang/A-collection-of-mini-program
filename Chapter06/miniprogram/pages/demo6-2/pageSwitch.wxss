@@ -1,0 +1,13 @@
+/* pages/demo6-2/pageSwitch.wxss */
+navigator{
+  background: lightblue;
+  width: 350rpx;
+  text-align: center;
+  border-radius: 10rpx;
+}
+.content{
+  background-color: lightpink;
+  width: 350rpx;
+  border-style: 10rpx;
+  margin-bottom: 15rpx;
+}

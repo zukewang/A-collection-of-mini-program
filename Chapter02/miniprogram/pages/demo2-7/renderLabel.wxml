@@ -1,0 +1,27 @@
+<!--pages/demo2-7/renderLabel.wxml-->
+<view class='container'>
+  <include src='../../pages/commons/header.wxml' />
+  <view class='page-body'>
+    <text class='h1'>渲染标签</text>
+    <view class='demo-box'>
+      <view class="title">1、条件渲染wx:if</view>
+      <view class="content">(1)简单列表渲染</view>
+      <view wx:if="{{condition}}">True</view>
+      <view wx:if="{{length>10}}">case1</view>
+
+      <view class="content">(2)block块级元素</view>
+      <block wx:if="{{condition}}">
+        <view>view1</view>
+        <view>view2</view>
+      </block>
+    </view>
+
+    <view class='demo-box'>
+      <view class="title">2、列表渲染wx:for</view>
+      <view wx:for="{{array}}" wx:key="index">
+        {{index+1}}:{{item.message}}
+      </view>
+    </view>
+  </view>
+</view>
+

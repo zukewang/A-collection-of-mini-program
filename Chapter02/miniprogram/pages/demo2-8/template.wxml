@@ -1,0 +1,36 @@
+<!--pages/demo2-8/template.wxml-->
+<view class='container'>
+  <include src='../commons/header.wxml' />
+  <view class='page-body'>
+    <text class='h1'>模板与引用</text>
+    <view class='demo-box'>
+      <view class="title">1、定义模板区域</view>
+      <!----定义模板-->
+      <template name="userTemplate">
+        <view>
+          <view>姓名：{{item.name}}</view>
+          <view>年龄：{{item.age}}</view>
+          <view>性别：{{item.gender}}</view>
+        </view>
+      </template>
+      <!-- 定义结束 -->
+    </view>
+    <view class='demo-box'>
+      <view class="title">2、调用模板</view>
+      <block wx:for="{{users}}" wx:key="index">
+          <template is="userTemplate" data="{{item}}"/>
+      </block>
+    </view>
+
+    <view class='demo-box'>
+      <view class="title">3、调用其他位置的模板</view>
+      <import src="../commons/template"/>
+      <template is="ceshi" data="{{text:'这是要传入模板的内容'}}"/>
+    </view>
+
+    <view class='demo-box'>
+      <view class="title">4、引用wxml代码段</view>
+      <include src="../commons/footer"></include>
+    </view>
+  </view>
+</view>

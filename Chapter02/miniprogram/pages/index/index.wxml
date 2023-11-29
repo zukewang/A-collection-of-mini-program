@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+      <text class="h1"> 欢迎来到第二章 小程序的视图与渲染</text>
+      <text class=""> 请点击下列条目跳转到对应案例测试页面</text>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="list-view">
+    <view style="background-color:white;width:100%;">
+      <view wx:for="{{ items }}" wx:key="key">
+        <navigator url="{{ item.path }}" class="list-itemview">
+          <view style="display:flex;margin-left: 30rpx;">
+            {{ item.text }}
+          </view>
+          <image style="width:40rpx;height:40rpx;" src="../../images/more.png"></image>
+        </navigator>
+        <view class="line-view"></view>
+      </view>
+    </view>
+  </view>
+</view>

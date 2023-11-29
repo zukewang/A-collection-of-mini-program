@@ -1,0 +1,17 @@
+<!--pages/demo10-16/video.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <text class='h1'>视频video编码测试</text>
+    <view class='demo-box'>
+      <view class="title">1、利用video组件播放视频</view>
+      <video id="myVideo1" src="{{videoSrc}}"></video>
+    </view>
+    <view class='demo-box'>
+      <view class="title">2、利用VideoContext绑定video发送弹幕内容</view>
+      <video id="myVideo2" src="{{videoSrc}}" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn show-center-play-btn='{{false}}' show-play-btn="{{true}}" controls></video>
+      <input bindblur="bindInputBlur" type="text" placeholder="输入弹幕内容" />
+      <button bindtap="bindSendDanmu" type="primary">发送弹幕</button>
+      <button bindtap="setPlayBackRate" type="primary">2倍速播放</button>
+    </view>
+  </view>
+</view>

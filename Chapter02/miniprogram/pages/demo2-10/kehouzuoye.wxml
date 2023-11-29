@@ -1,0 +1,26 @@
+<!--pages/demo2-10/kehouzuoye.wxml-->
+<view class="container">
+  <view class="page-body">
+    <include src="../commons/header1"></include>
+  
+    <view class="jiu-box" style="margin-bottom: 0rpx; margin-left: 0epx;">
+      <view class="demo-box1" style="background-color: {{color}};">
+        <view wx:for="{{arr}}" wx:for-item="i" class="aa">
+          <view wx:for="{{arr}}" wx:for-item="j" class="jiu">
+            <view wx:if="{{i<=j}}" class="jiu-item">
+              {{j}}X{{i}}={{j*i}}
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='demo-box' style="margin-left: 70rpx;">
+        <view class="title">点击按钮切换乘法口诀背景为蓝色</view>
+          <button type="primary" bind:tap="btnClick">{{btnText}}</button>
+          <text style="color: {{black}};">{{content}}</text>
+      </view>
+    </view>
+    <view class='demo-box'>
+      <include src="../commons/footer1"></include>
+    </view>
+  </view>
+</view>

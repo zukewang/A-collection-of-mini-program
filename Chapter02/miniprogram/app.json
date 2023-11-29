@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/demo2-1/button",
+    "pages/demo2-2/button",
+    "pages/demo2-3/form",
+    "pages/demo2-4/label",
+    "pages/demo2-5/textarea",
+    "pages/demo2-6/dataBind",
+    "pages/demo2-7/renderLabel",
+    "pages/demo2-8/template",
+    "pages/demo2-9/chengfakoujue",
+    "pages/demo2-10/kehouzuoye"
+    
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

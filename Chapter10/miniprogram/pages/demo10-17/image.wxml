@@ -1,0 +1,22 @@
+<!--pages/demo10-17/image.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <view class='h1'>多媒体组件image编码测试</view>
+    <view class='demo-box'>
+      <view class="title">1、mode属性图片剪裁</view>
+      (1)aspectFit 完整显示图片
+      <image src="../../images/lenna.jpg" mode="aspectFit"/>
+      (2)aspectFill 图片短边完全显示,另一方向截取
+      <image src="../../images/lenna.jpg" mode="aspectFill"/>
+      (3)widthFix 宽度不变，高度自动变化，保持原图宽高比不变
+      <image src="../../images/lenna.jpg" mode="widthFix" lazy-load/>
+      (4)top 裁剪模式，不缩放图片，只显示图片的顶部区域（相应的还有left、right、bottom、center、top left左上、top right右上等）
+      <image src="../../images/lenna.jpg" mode="top"/>
+    </view>
+    <view class="demo-box">
+    <view class="title">2、show-menu-by-longpress长按图片显示识别小程序码</view>
+    <image src="../../images/miniprogramcode.jpg" mode="aspectFit" show-menu-by-longpress lazy-load></image>
+    </view>
+  </view>
+</view>
+

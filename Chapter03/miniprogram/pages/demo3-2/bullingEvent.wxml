@@ -1,0 +1,20 @@
+<!--pages/demo3-2/bullingEvent.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <text class='h1'>冒泡事件案例</text>
+    <view class='demo-box'>
+      <view class="title">冒泡事件 嵌套的组件会逐级向上传递</view>
+      <view class="content">请分别点击不同view,观察控制器输出</view>
+      <view class="view1" id="v1" bind:tap="view1click">
+        View 1
+        <view class="view2" id="v2" catch:tap="view2click">
+          view2
+          <view class="view3" id="v3" bind:tap="view3click">
+          view3
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+

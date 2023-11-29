@@ -1,0 +1,31 @@
+/* pages/demo10-15/audio.wxss */
+
+.content {
+  font-size: 10pt;
+padding: 5rpx;
+
+}
+
+button {
+  border-radius: 4px;
+  font-weight: 700;
+  line-height: 0.41176471;
+  font-size: 14px;
+  padding-left: 0;
+}
+
+button:not([size='mini']) {
+  width: 113px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.title {
+  padding: 0rpx;
+}
+
+.demo-box {
+  width: 86%;
+  margin: 8rpx;
+}

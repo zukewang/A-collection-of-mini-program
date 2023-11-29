@@ -1,0 +1,10 @@
+/* pages/demo10-17/image.wxss */
+
+image {
+  margin: 10rpx;
+}
+
+.demo-box {
+  width: 90%;
+  font-size: 12pt;
+}

@@ -1,0 +1,43 @@
+<!--pages/demo2-6/dataBind.wxml-->
+<view class='container'>
+  
+  <view class='page-body'>
+    <text class='h1'>数据绑定综合案例</text>
+    <view class='demo-box'>
+      <view class="title">1、内容绑定</view>
+      <button type="primary" bind:tap="btnClick">{{btnText}}</button>
+      <text style="color: {{color}};">{{content}}</text>
+     
+    </view>
+    <view class='demo-box'>
+      <view class="title">2、组件属性绑定</view>
+      <view id="{{id}}">这是带有id的view</view>
+
+    </view>
+    <view class='demo-box'>
+      <view class="title">3、控制属性与关键字绑定</view>
+      <text class="content">当condition初始化为false时，view不显示</text>
+      <view wx:if="{{condition}}">测试数据1</view>
+      <view wx:if="{{false}}">测试数据2</view>
+      <view wx:if="false">测试数据3</view>
+     
+    </view>
+    <view class='demo-box'>
+      <view class="title">4、运算绑定</view>
+      <view hidden="{{result?true:false}}">三元运算</view>
+      <view>算术运算:{{a+b}}+{{c}}+{{d}}</view>
+      <view wx:if="{{length>3}}">逻辑判断</view>
+      <view >字符串的运算：{{"hello,"+name}}</view>
+      <view >字符串的运算：{{msg+name}}</view>
+      <view>数据获取：{{array[1]}}+{{object.name}}</view>
+
+     
+    </view>
+
+    <view class='demo-box'>
+      <view class="title">5、组合绑定</view> 
+      <view wx:for="{{[1,2,3,4,x]}}" wx:key="index">{{item}}</view>
+
+    </view>
+  </view>
+</view>

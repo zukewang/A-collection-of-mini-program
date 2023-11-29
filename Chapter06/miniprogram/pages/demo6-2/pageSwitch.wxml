@@ -1,0 +1,21 @@
+<!--pages/demo6-2/pageSwitch.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <text class='h1'>页面跳转与页面生命周期案例</text>
+    <view class='demo-box'>
+      <view class="title">1、navigateTo导航跳转</view>
+      <button type="primary" bindtap="navagateToPage11">跳转到page1页面</button>
+      <navigator url="./page2/page2?id=1" hover-class="none" open-type="switchTab">navigator组件跳转</navigator>
+    </view>
+
+    <view class='demo-box'>
+      <view class="title">2、redirectTo重定向跳转</view>
+      <button type="primary" bindtap="redirectToPage2">跳转到pge2页面</button>
+    </view>
+
+      <view class='demo-box'>
+      <view class="title">3、tabBar页面切换</view>
+      <view class="content">请切换底部tabBar观察控制器输出</view>
+    </view>
+  </view>
+</view>

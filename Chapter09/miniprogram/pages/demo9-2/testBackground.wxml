@@ -1,0 +1,2 @@
+<!--pages/demo9-2/testBackground.wxml-->
+<image class="background-image" src="../../images/background.png"></image>

@@ -1,0 +1,21 @@
+<!--pages/demo8-4/absolute&relative.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <text class='h1'>相对、绝对定位测试案例</text>
+    <view class='demo-box'>
+      <view class="title">相对定位</view>
+      <view class="relative-container">
+        <view class="item">1</view> <view class="item i2">2</view>
+        <view class="item">3</view> <view class="item i4" >4</view>
+      </view>
+    </view>
+
+       <view class='demo-box'>
+      <view class="title">绝对定位</view>
+      <view class="absolute-container">
+        <view class="item">1</view> <view class="item">2</view>
+        <view class="item i3">3</view> <view class="item">4</view>
+      </view>
+    </view>
+  </view>
+</view>

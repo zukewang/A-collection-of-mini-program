@@ -1,0 +1,23 @@
+<!--pages/demo10-12/slider.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <view class='h1'>表单组件slider的简单应用</view>
+    <view class='demo-box'>
+      <view class='title'>1、滑动条右侧显示当前取值</view>
+      <slider min='4' max='100' value='50' step='4' show-value /> 
+    </view>
+    <view class='demo-box'>
+      <view class='title'>2、activeColor属性自定义滑动条颜色和滑块样式</view>
+      <slider value='30' block-size='10' block-color='blue' activeColor='red'  backgroundColor="grey" />
+    </view>
+    <view class='demo-box'>
+      <view class='title'>3、disabled禁用滑动条（不能拖动）</view>
+      <slider min='0' max='100' value='50' disabled />
+    </view>
+    <view class='demo-box'>
+      <view class='title'>4、bindchange属性监听滑动条事件</view>bindchange监听一次拖动后
+      <slider min='0' max='100' value='10' bindchange='sliderChange' />bindchanging监听拖动过程
+      <slider min='0' max='100' value='10' bindchanging='sliderChanging' />
+    </view>
+  </view>
+</view>

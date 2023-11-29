@@ -1,0 +1,35 @@
+ <!-- pages/demo10-15/audio.wxml -->
+ <view class='container'>
+  <view class='page-body'>
+    <view class='h1'>多媒体组件audio编码测试</view>
+    <view class='demo-box'>
+      <view class="title">1.利用audio组件播放音乐</view>
+      <audio id="myAudio1" src="{{current.src}}" poster="{{current.poster}}" name="{{current.name}}" author="{{current.author}}" controls loop bindplay="" bindended="" bindpause="">
+      </audio>
+      <view class="content">audio组件不再维护，建议使用能力更强的 'wx.createInnerAudioContext' 接口</view>
+    </view>
+    <view class='demo-box'>
+      <view class="title">2.利用AudioContext类的实例，通过wx.createAudioContext获取</view>
+      <audio id="myAudio2" src="{{current.src}}" poster="{{current.poster}}" name="{{current.name}}" controls="true" author="{{current.author}}" loop></audio>
+      <view style="display:flex;flex-wrap:wrap">
+      <button type="mini" bindtap="audioContextPlay">播放</button>
+      <button type="mini" bindtap="audioContextPause">暂停</button>
+      <button type="mini" bindtap="audioContextStart">回到开头</button>
+      </view>
+    </view>
+    <view class='demo-box'>
+      <view class="title">3.利用InnerAudioContext类实例，调用wx.createInnerAudioContext</view>
+      <audio id="myAudio3" src="{{current.src}}"  name="{{current.name}}" poster="{{current.poster}}" controls="true" author="{{current.author}}" loop></audio>
+      <view class="content">测试时请打开onload函数中的注释语句
+      </view>
+      <view class="btn-area" style="display:flex;flex-wrap:wrap">
+      <button type="mini" bindtap="innerAudioPlay">播放</button>
+      <button type="mini" bindtap="innerAudioPause">暂停</button>
+      <button type="mini" bindtap="innerAudioStop">停止</button>
+      <button type="mini" bindtap="innerAudioSeek">跳转到第5s</button>
+      <button type="mini" bindtap="innerAudioDestroy">销毁实例</button>
+      </view>
+    </view>
+  </view>
+</view>  
+ 

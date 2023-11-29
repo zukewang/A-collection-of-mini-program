@@ -1,0 +1,32 @@
+/* pages/demo10-18/camera.wxss */
+
+.demo-box {
+  height: 600rpx;
+}
+
+.show-imageVideo {
+  font-size: 12pt;
+  flex-direction: column;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600rpx;
+}
+
+image {
+  margin: 30rpx;
+  width: 500rpx;
+  height: 300rpx;
+}
+.btn-area{
+   display: flex;
+   align-items: center;
+  justify-content: space-around; 
+}
+button{
+  margin-left: 10rpx;
+}
+video{
+    margin: 30rpx;
+}

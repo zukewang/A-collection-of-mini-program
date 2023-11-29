@@ -1,0 +1,41 @@
+<!--pages/demo10-11/picker.wxml-->
+<text>pages/demo10-11/picker.wxml</text>
+<!--pages/demo10-11/picker.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <view class='h1'>picker的简单应用</view>
+    <view class='demo-box'>
+      <view class='title'>1、mode=selector普通选择器（默认）</view>
+      <picker mode='selector' range='{{selectorItems}}' bindchange='selectorChange'>
+        <view>请选择:</view><view>你选的选项是: {{selector}} </view>
+      </picker>
+    </view>
+    <view class='demo-box'>
+      <view class='title'>2、mode=multiSelector多列选择器</view>
+      <picker mode='multiSelector' 
+            range='{{multiSelectorItems}}' bindchange='multiSelectorChange'>
+        <view>请选择:</view> <view>你选的选项是：{{multiSelector}} </view>   
+      </picker>
+    </view>
+    <view class='demo-box'>
+      <view class='title'>3、mode=time时间选择器</view>
+      <picker mode='time' bindchange='timeChange'>
+        <view>请选择:</view><view>你选的时间是：{{time}} </view>
+      </picker>
+    </view>
+    <view class='demo-box'>
+      <view class='title'>4、mode=date日期选择器</view>
+      <picker mode='date' bindchange='dateChange'>
+        <view>请选择:</view><view>你选的日期是:{{date}} </view>
+      </picker>
+    </view>
+    <view class='demo-box'>
+      <view class='title'>5、省市区选择器</view>
+      <picker mode='region' bindchange='regionChange'>
+        <view>请选择:</view><view>你选的省市区是： {{region}} </view>
+      </picker>
+    </view>
+  </view>
+</view>
+
+

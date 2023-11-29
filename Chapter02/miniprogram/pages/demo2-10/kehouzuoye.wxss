@@ -1,0 +1,40 @@
+/* pages/demo2-10/kehouzuoye.wxss */
+.aa {
+  line-height: 32px;
+}
+.jiu-box {
+  width: 710rpx;
+  margin-right: 20rpx;
+  padding: 10rpx;
+}
+.jiu {
+  display: inline-block;
+}
+.jiu-item {
+  width: 73rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  border: 1px solid #abcdef;
+  font-size: 19rpx;
+  margin-right: 4rpx;
+}
+.jiu-none {
+  display: none;
+}
+.one {
+  display: inline-block;
+  margin-right: 4rpx;
+  width: 70rpx;
+  height: 32rpx;
+  font-size: 14rpx;
+  text-align: center;
+  border: 1rpx solid #1296db;
+}
+.demo-box1{
+  width: 100%;
+  display: flex;
+  margin: 2rpx;
+  padding: 7rpx;
+  border: 0.1rpx solid black;
+}

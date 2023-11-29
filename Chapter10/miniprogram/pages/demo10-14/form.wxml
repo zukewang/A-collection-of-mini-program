@@ -1,0 +1,35 @@
+<!--pages/demo10-14/form.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <view class='title1'>form编码测试案例--用户注册</view>
+    <view class='demo-box'>
+      <view class="page-body">
+        <form catchsubmit="onSubmit" catchreset="onReset">
+         <view class='title'>姓名</view>
+          <input name="input" placeholder="请输入姓名" />
+            <view class="title">是否为学生</view>
+            否<switch name="switch" />是
+            <view class="title">性别</view>
+            <radio-group name="radio">
+              <label><radio value="0"/>男</label>
+              <label><radio value="1"/>女</label>
+            </radio-group>        
+            <view class="title">兴趣爱好</view>
+            <checkbox-group name="checkbox">
+              <label><checkbox value="checkbox1" />乒乓球</label>
+              <label><checkbox value="checkbox2" />羽毛球</label>
+              <label><checkbox value="checkbox3" />游戏</label>
+            </checkbox-group>
+            <view class='title'>家庭住址</view>
+              <picker name="picker" mode='region' bindchange='regionChange'>
+                <view>你的地址为: {{region}} </view>
+              </picker>
+            <button type="primary" formType="submit">提交</button>
+            <button formType="reset">重置</button>
+        </form>
+      </view>
+    </view>
+  </view>
+</view>
+
+

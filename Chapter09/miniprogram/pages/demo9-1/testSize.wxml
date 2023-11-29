@@ -1,0 +1,13 @@
+<!--pages/demo9-1/testSize.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <text class='h1'>尺寸属性测试案例</text>
+    <view class='demo-box'>
+      <view class="title">尺寸实例</view>
+      <view class="size-container">
+        <image src="../../images/img1.png"></image>
+        <image src="../../images/img2.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

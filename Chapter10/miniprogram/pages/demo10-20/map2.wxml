@@ -1,0 +1,15 @@
+<!--pages/demo10-19/map2.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <text class='h1'>地图API编码测试</text>
+    <view class='demo-box'>
+      <map id="myMap" markers="{{markers}}" show-location></map>
+    </view>
+    <view class="btn-area">
+      <button type="mini" bindtap="moveToLocation">移动到用户当前位置</button>
+      <button type="mini" bindtap="getCenterLocation">获取当前地图中心位置</button>
+      <button type="mini" bindtap="translateMarker">移动标注marker</button>
+      <button type="mini" bindtap="includePoints">缩放视野展示所有经纬度</button>
+    </view>
+  </view>
+</view>

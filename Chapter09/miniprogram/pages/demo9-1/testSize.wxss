@@ -1,0 +1,11 @@
+/* pages/demo9-1/testSize.wxss */
+.size-container image{
+  width: 300rpx;
+  height: 400rpx;
+  /*display: block;   /* 独占一行 */
+  display: inline-block; /*共享一行*/
+  min-width: 100rpx;
+  min-height: 200rpx;
+  max-width: 200rpx;
+  max-height: 250rpx;
+}

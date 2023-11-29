@@ -1,0 +1,8 @@
+/* pages/demo10-16/video.wxss */
+input{
+  border: 1px solid grey;
+  width: 80%;
+}
+video{
+  margin: 15rpx;
+}

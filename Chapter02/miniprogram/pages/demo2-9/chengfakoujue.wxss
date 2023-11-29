@@ -1,0 +1,40 @@
+/* pages/demo2-9/chengfakoujue.wxss */
+.aa {
+  line-height: 32px;
+}
+.jiu-box {
+  width: 720rpx;
+  margin: auto;
+  padding: 28rpx 0;
+}
+.jiu {
+  display: inline-block;
+}
+.jiu-item {
+  width: 73rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  border: 1px solid #abcdef;
+  font-size: 19rpx;
+  margin-right: 4rpx;
+}
+.jiu-none {
+  display: none;
+}
+.one {
+  display: inline-block;
+  margin-right: 4rpx;
+  width: 70rpx;
+  height: 32rpx;
+  font-size: 14rpx;
+  text-align: center;
+  border: 1rpx solid #1296db;
+}
+.demo-box1{
+  width: 99%;
+  display: flex;
+  margin: 2rpx;
+  padding: 7rpx;
+  border: 1rpx solid black;
+}

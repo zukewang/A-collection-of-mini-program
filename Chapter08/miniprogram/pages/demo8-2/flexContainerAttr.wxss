@@ -1,0 +1,50 @@
+/* pages/demo8-2/flexContainerAttr.wxss */
+
+.contentContainer {
+  display: flex;
+  border: 1rpx solid black;
+  width: 80%;
+  height: 300rpx;
+}
+
+.contentContainer1 {
+  display: flex;
+  border: 1rpx solid black;
+  width: 80%;
+  height: 500rpx;
+}
+
+.btn-area {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10rpx;
+}
+
+button {
+  width: 182rpx;
+  padding: 0px;
+  font-size: 16px;
+  margin-top: 0rpx;
+}
+
+button:not([size='mini']) {
+  width: 120rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item {
+  border: 1rpx solid black;
+  background-color: lightpink;
+  width: 110rpx;
+  height: 100rpx;
+}
+
+.btn-active {
+  background-color: lightblue;
+}
+
+.i1 {
+  border: 1rpx solid black;
+  background-color: lightpink;
+}

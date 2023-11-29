@@ -1,0 +1,15 @@
+/* pages/demo10-11/picker.wxss */
+
+picker {
+  font-size: 12pt;
+}
+
+.demo-box {
+  width: 86%;
+}
+
+
+.demo-box .title { 
+  display: flex;
+  align-self: start;
+}

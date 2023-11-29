@@ -1,0 +1,4 @@
+/* pages/demo10-12/slider.wxss */
+slider{
+  width: 100%;
+}

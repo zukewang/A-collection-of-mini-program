@@ -1,0 +1,19 @@
+/* pages/demo3-2/bullingEvent.wxss */
+.view1{
+  height: 500rpx;
+  width: 100%;
+  background-color: lightsteelblue;
+  color: white;
+}
+
+.view2{
+  height: 400rpx;
+  width: 80%;
+  background-color: lightpink;
+}
+
+.view3{
+  height: 200rpx;
+  width: 40%;
+  background-color: lightseagreen;
+}

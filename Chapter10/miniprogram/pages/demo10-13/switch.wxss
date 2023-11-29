@@ -1,0 +1,5 @@
+/* pages/demo10-13/switch.wxss */
+
+.title{
+  align-self: center;
+}

@@ -1,0 +1,30 @@
+<!--pages/demo8-1/useFlex.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <text class='h1'>简单使用flex布局</text>
+    <view class='demo-box'>
+      <view class="title">横向排列</view>
+      <view class="row-container">
+        <view class="item"> item1 </view>
+        <view class="item"> item2 </view>
+        <view class="item"> item3 </view>
+      </view>
+    </view>
+    <view class='demo-box'>
+      <view class="title">纵向排列</view>
+      <view class="column-container">
+        <view class="item"> item1 </view>
+        <view class="item"> item2 </view>
+        <view class="item"> item3 </view>
+      </view>
+    </view>
+    <view class='demo-box'>
+      <view class="title">第一个flex布局</view>
+      <view class="column-container1">
+        <view class="item"> 华为 </view>
+        <view class="item"> oppo </view>
+        <view class="item"> vivo </view>
+      </view>
+    </view>
+  </view>
+</view>

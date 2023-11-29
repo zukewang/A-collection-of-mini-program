@@ -1,0 +1,30 @@
+/* pages/demo3-1/eventObject.wxss */
+.content {
+  display: block;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  width: 100%;
+  font-size: 30rpx;
+  padding: 15rpx;
+  text-align: center;
+}
+
+
+.touch-view{
+  width: 300rpx;
+  height: 200rpx;
+  background-color: lightblue;
+}
+
+
+.demo-box1{
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 14rpx;
+  padding: 7rpx;
+  border: 1rpx solid black;
+}

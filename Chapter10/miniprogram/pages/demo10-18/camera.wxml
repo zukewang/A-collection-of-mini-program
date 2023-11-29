@@ -1,0 +1,24 @@
+<!--pages/demo10-18/camera.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <view class='h1'>媒体组件video的简单应用</view>
+    <view class='demo-box'>
+      <view class='title'>1、使用createCameraContext绑定相机并操作</view>
+      <camera device-position="back" flash="off" style="width: 100%; height: 300px;"></camera>
+      <view class="btn-area">
+        <button type="primary" bindtap="takePhoto">拍照</button>
+        <button type="primary" bindtap="startRecord">录像</button>
+        <button type="primary" bindtap="stopRecord">停止</button>
+      </view>
+    </view>
+    <view class="show-imageVideo">
+      <view class="title">2、查看保存的照片或者视频 </view>
+      <text>(1)照片路径：success回调函数的res.tempThumbPath</text>
+      <image wx:if="{{src}}" mode="aspectFill" src="{{src}}"></image>
+      <text>(2)录像路径：success回调函数的res.tempVideoPath</text>
+      <video src="{{videoSrc}}" show-play-btn="{{true}}" wx:if="{{videoSrc}}"></video>
+    </view>
+  </view>
+</view>
+
+

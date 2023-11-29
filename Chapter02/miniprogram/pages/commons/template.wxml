@@ -1,0 +1,7 @@
+<template name="ceshi">
+  <text>{{text}}</text>
+</template>
+
+<template name="ceshi1">
+  <text>{{text}}</text>
+</template>

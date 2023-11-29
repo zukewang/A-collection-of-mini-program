@@ -1,0 +1,17 @@
+/* pages/demo10-14/form.wxss */
+
+.title1{
+  align-self: center;
+}
+input, button {
+  margin: 15rpx;
+}
+
+input {
+  border: 1rpx solid silver;
+  height: 60rpx;
+}
+form{
+  font-size: 12pt;
+}
+

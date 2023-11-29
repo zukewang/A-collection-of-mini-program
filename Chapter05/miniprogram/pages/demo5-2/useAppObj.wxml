@@ -1,0 +1,13 @@
+<!--pages/demo5-2/useAppObj.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <text class='h1'>使用app对象的案例讲解</text>
+    <view class='demo-box'>
+      <view class="title">点击按钮调用app.js中testApp函数</view>
+      <button type="primary" bind:tap="getUserName">点击调用</button>
+      <view class="title">app.js中定义的全局用户名是：
+        <text>{{name}}</text>
+      </view>
+    </view>
+  </view>
+</view>

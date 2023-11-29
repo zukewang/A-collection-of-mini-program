@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="userinfo">
+    <block>
+      <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+        <image class="userinfo-avatar" src="{{avatarUrl}}"></image>
+      </button>
+    </block>
+    <input type="nickname" style="padding-left: 220rpx;" class="weui-input" placeholder="请输入昵称" />
+    <text class="h1"> 欢迎来到第 9 章 小程序的样式基础</text>
+    <text class=""> 请点击下列条目跳转到对应案例测试页面</text>
+</view>
+<view class="list-view">
+  <view style="background-color:white;width:100%;">
+    <view wx:for="{{ items }}" wx:key="index">
+      <navigator url="{{ item.path }}" class="list-itemview">
+        <view style="display:flex;margin-left: 30rpx;">
+          {{ item.text }}
+        </view>
+        <image style="width:40rpx;height:40rpx;" src="../../images/more.png"></image>
+      </navigator>
+      <view class="line-view"></view>
+    </view>
+  </view>
+</view>

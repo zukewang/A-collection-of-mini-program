@@ -1,0 +1,22 @@
+<!--pages/demo9-3/margin&padding.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <text class='h1'>边距属性测试案例</text>
+    <view class='demo-box'>
+      <view class="title">1、margin外边距</view>
+      <view class="margin-container">
+        <view class="item">
+          <view class="item1"> 1 </view>
+        </view>
+      </view>
+    </view>
+     <view class='demo-box'>
+      <view class="title">2、padding内边距</view>
+      <view class="margin-container">
+        <view class="item">
+          <view class="item2"> 2 </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

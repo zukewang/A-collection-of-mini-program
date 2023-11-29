@@ -1,0 +1,38 @@
+<!--pages/demo3-1/eventObject.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <text class='h1'>事件对象的打印案例</text>
+
+    <view class='demo-box'>
+      <view class="title">按钮点击事件bindtap</view>
+      <button id="btn" type="primary" bind:tap="printEvent" data-btn-info1="这是绑定的数据">点击打印
+      </button>
+    </view>
+
+    <view class='demo-box'>
+      <view class="title">按钮点击打印姓名</view>
+      <button id="btn1" type="primary" bind:tap="printEvent1" data-btn-info2="这是绑定的数据">点击打印
+      </button>
+    </view>
+
+    <view class='demo-box'>
+      <view class="title">触摸事件对象的打印</view>
+      <view class="touch-view" bind:touchstart="printEvent" bind:touchend="printEvent">
+        please touch this current view
+      </view>
+    </view>
+
+    <view class="demo-box">
+      <view class="title">内容输出区域</view>
+      <text class="content">{{content}}</text>
+    </view>
+
+    <view class="demo-box">
+      <view class="title">自己姓名展示出</view>
+      <view class="demo-box1">
+        <text class="content">{{content1}}</text>
+      </view>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,80 @@
+<!--pages/demo8-2/flexContainerAttr.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <text class='h1'>flex容器属性</text>
+    <view class='demo-box'>
+      <view class="title">1、flex-direction</view>
+      <view style="flex-direction: {{currentValue1}}" class="contentContainer">
+        <view class="item"> item1 </view>
+        <view class="item"> item2 </view>
+        <view class="item"> item3 </view>
+      </view>
+      <view class="btn-area">
+        <block wx:for="{{flexDirectionValue}}">
+          <button data-valueIndex='{{index}}' bindtap="changeValue1" hover-class="btn-active">{{item}}</button>
+        </block>
+      </view>
+    </view>
+
+    <view class='demo-box'>
+      <view class="title">2、justify-content</view>
+      <view style="justify-content: {{currentValue2}};flex-direction: {{currentValue1}}" class="contentContainer1">
+        <view class="item"> item1 </view>
+        <view class="item"> item2 </view>
+        <view class="item"> item3 </view>
+      </view>
+      <view class="btn-area">
+        <block wx:for="{{justifyContentValue}}">
+          <button data-index='{{index}}' bindtap="changeValue2" hover-class="btn-active">{{item}}</button>
+        </block>
+      </view>
+    </view>
+
+    <view class='demo-box'>
+      <view class="title">3、align-items</view>
+      <view style="align-items: {{currentValue3}};flex-direction: {{currentValue1}}" class="contentContainer">
+        <view class="i1"> item1 </view>
+        <view class="item"> item2 </view>
+        <view class="item"> item3 </view>
+      </view>
+      <view class="btn-area">
+        <block wx:for="{{alignItemsValue}}">
+          <button data-index='{{index}}' bindtap="changeValue3" hover-class="btn-active">{{item}}</button>
+        </block>
+      </view>
+    </view>
+
+
+    <view class='demo-box'>
+      <view class="title">4、flex-wrap</view>
+      <view style="flex-wrap: {{currentValue4}};flex-direction: {{currentValue1}}" class="contentContainer">
+        <block wx:for="{{[1,2,3,4,5,6,7,8]}}">
+          <view class="item"> item{{item}}</view>
+        </block>
+      </view>
+      <view class="btn-area">
+        <block wx:for="{{flexWrapValue}}">
+          <button data-index='{{index}}' bindtap="changeValue4" hover-class="btn-active">{{item}}</button>
+        </block>
+      </view>
+    </view>
+
+    <view class='demo-box'>
+      <view class="title">5、align-content</view>
+      <view style="align-content: {{currentValue5}};flex-wrap:wrap;flex-direction: {{currentValue1}}" class="contentContainer">
+        <view class="item">item1</view>
+        <view class="item">item2</view>
+        <view class="item">item3</view>
+        <view class="item">item4</view>
+        <view class="item">item5</view>
+        <view class="item">item6</view>
+      </view>
+      <view class="btn-area">
+        <block wx:for="{{alignContentValue}}">
+          <button data-index='{{index}}' bindtap="changeValue5" hover-class="btn-active">{{item}}</button>
+        </block>
+      </view>
+    </view>
+
+  </view>
+</view>

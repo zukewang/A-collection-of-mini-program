@@ -1,0 +1,13 @@
+<!--pages/demo2-1/button.wxml-->
+<view class="container">
+  <view class="page-body">
+    <text class="h1">button组件的简单实用案例</text>
+    <view class="demo-box">
+      <view>不同类型的button的样式</view>
+      <button type="default">{{btnText}}</button>
+      <button type="primary" loading="true">页面主操作按钮 Loading</button>
+      <button type="warn" size="mini">警告类按钮</button>
+      <text>{{content}}</text>
+    </view>
+  </view>
+</view>

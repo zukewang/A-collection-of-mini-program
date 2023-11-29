@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/demo10-1/view",
+    "pages/demo10-2/scroll-view",
+    "pages/demo10-3/text",
+    "pages/demo10-4/progress",
+    "pages/demo10-5/buttons",
+    "pages/demo10-6/input",
+    "pages/demo10-7/textarea",
+    "pages/demo10-8/radio",
+    "pages/demo10-9/checkbox",
+    "pages/demo10-10/label",
+    "pages/demo10-11/picker",
+    "pages/demo10-12/slider",
+    "pages/demo10-13/switch",
+    "pages/demo10-14/form",
+    "pages/demo10-15/audio",
+    "pages/demo10-16/video",
+    "pages/demo10-17/image",
+    "pages/demo10-18/camera",
+    "pages/demo10-19/map1",
+    "pages/demo10-20/map2"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "第 10 章 组件",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,16 @@
+<!--pages/demo5-1/lifeCycle.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <text class='h1'>小程序生命周期测试案例</text>
+    <view class='demo-box'>
+      <view class="title">1、查看项目启动时生命周期执行过程</view>
+      <view class="content">请重启项目，观察控制器输出</view>
+    </view>
+     <view class='demo-box'>
+      <view class="title">2、查看小程序进入后台时生命周期执行过程</view>
+      <view class="content">请点击右上角胶囊按钮的圆形关闭按钮，观察控制器输出</view>
+    </view>
+  </view>
+</view>
+
+

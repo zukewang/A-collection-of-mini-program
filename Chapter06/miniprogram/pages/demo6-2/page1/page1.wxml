@@ -1,0 +1,5 @@
+<!--pages/demo6-2/page1/page1.wxml-->
+<text>欢迎来到page1页面\n</text>
+<text>当前页面路径是：\n</text>
+<text>pages/demo6-2/page1/page1.wxml</text>
+<text>观察页面左上角，可重新返回</text>

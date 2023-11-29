@@ -1,0 +1,8 @@
+<!-- Chapter02/pages/commons/templates.wxml -->
+<template name="template1">
+  <text>{{text}}</text>
+</template>
+
+<template name="template2">
+  <text>{{text}}</text>
+</template>

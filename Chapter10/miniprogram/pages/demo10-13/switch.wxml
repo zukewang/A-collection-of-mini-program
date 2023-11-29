@@ -1,0 +1,15 @@
+<!--pages/demo10-13/switch.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <view class='h1'>switch编码测试</view>
+    <view class='demo-box'>
+      <view class='title'>switch事件监听</view>
+      <view>默认关闭
+        <switch bindchange="switchChange" />
+      </view>
+      <view>checked属性开启
+        <switch checked />
+      </view>
+    </view>
+  </view>
+</view>
